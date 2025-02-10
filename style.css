@@ -1,0 +1,407 @@
+
+/* Основные стили для всего сайта */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ecf0f1;
+    color:  #1d778d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Заголовки
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Заголовок и меню */
+header {
+    background:url('https://png.pngtree.com/background/20210714/original/pngtree-modern-purple-gradient-technology-background-with-digital-network-lines-and-green-picture-image_1239845.jpg');
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(3, 22, 11); /* Оранжевый при наведении */
+}
+
+/* Разделы сайта */
+section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: rgb(243, 237, 237);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sorting-guide {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sorting-guide .item {
+    background:linear-gradient(135deg, #2e57b1, #75ec5d);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.sorting-guide .item:hover {
+    transform: scale(1.05);
+}
+
+.item-icon {
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.signs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sign {
+    text-align: center;
+    background-color: #32b826;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sign:hover {
+    transform: scale(1.05);
+}
+
+.sign-icon {
+    width: 80px;
+    height: 80px;
+}
+
+/* Footer */
+footer {
+    background-color: #27ae60;
+    color: rgb(240, 237, 237);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Мобильная версия */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .sorting-guide {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signs {
+        flex-direction: column;
+        align-items: center;
+    }
+} 
+
+/* Разделы переработки отходов, зеленой энергии и образования */
+#disposal, #green-energy, #education {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#disposal h2, #green-energy h2, #education h2 {
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('checkmark-icon.png') no-repeat left center;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+ul li strong {
+    color: #2c3e50;
+}
+
+/* Общие стили для всех разделов */
+section p {
+    font-size: 16px;
+    color: #2c3e50;
+
+}
+
+/* Стиль для дополнительного контента */
+h3 {
+    font-size: 20px;
+    color: #27ae60;
+}
+
+.signs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sign {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sign:hover {
+    transform: scale(1.05);
+}
+
+.sign-icon {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+
+
+
+h2, h3, p {
+    margin: 20px 0;
+}
+
+/* Стиль для навигационного меню */
+nav {
+    background-color: #9fa0a19f;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(250, 246, 246);
+    font-size: 18px;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+/* Добавляем красивое выделение заголовков */
+h2 {
+    color: #27ae60;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Разделы с информацией */
+section {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: translateY(-10px);
+}
+
+/* Эффекты на текст */
+h3 {
+    color: #00974c;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+h3:hover {
+    color: #3d3d3c;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #757477;
+    transition: color 0.3s ease;
+}
+
+section p:hover {
+    color: #111111;
+}
+
+/* Анимация появления при скролле */
+section {
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+/* Стилизация для зелёной энергии и переработки */
+#green-energy, #disposal {
+    background-color: #f5fbf3;
+    border-left: 5px solid #27ae60;
+    
+}
+
+#education {
+    background-color: #dfe4ee;
+    
+    border-left: 5px solid #3498db;
+}
+
+/* Разделы с иконками сортировки мусора */
+.signs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sign {
+    text-align: center;
+    background-color: #1d778d;
+    padding: 25px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sign:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sign-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.sign:hover .sign-icon {
+    transform: rotate(20deg);
+}
+
+.sign-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3d5e80;
+    margin-top: 10px;
+}
+
+/* Плавный эффект перехода на разделы */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+/* Кнопки */
+.button {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1f7a42;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .signs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sign {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+}
